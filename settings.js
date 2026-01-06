@@ -1,79 +1,72 @@
-//base by SHYAM 
-//YouTube: @DEX-SHYAM
-//Whatsapp https://wa.me/+917384287404
-//GitHub: Dexsam07
-//WhatsApp: https://chat.whatsapp.com/IOEbmfzOD6d9TCjdX5Fi3B
-//want more free bot scripts? follow my channel : https://whatsapp.com/channel/0029VasiOoR3bbUw5aV4qB31
-const fs = require('fs')
-const chalk = require('chalk')
-require('dotenv').config()
+// 🚀 SHYAM-MD V2 - OFFICIAL BOT
+// 👨‍💻 Created By: DEX-SHYAM
+// 🔗 GitHub: https://github.com/Dexsam07
+// 📱 WhatsApp: https://wa.me/917384287404
 
-//contact details - sensitive info moved to .env
-global.SESSION_ID = process.env.SESSION_ID || "" //fallback to default if not in .env
-global.ownernomer = process.env.OWNER_NUMBER || "917384287404"
+const fs = require('fs');
+const chalk = require('chalk');
+require('dotenv').config();
 
-global.ownername = process.env.OWNER_NAME || "DEX-SHYAM"
+// --- OWNER & BOT DETAILS ---
+global.SESSION_ID = process.env.SESSION_ID || ""; 
+global.ownernomer = process.env.OWNER_NUMBER || "917384287404";
+global.ownernumber = process.env.OWNER_NUMBER || '917384287404';
+global.ownername = process.env.OWNER_NAME || 'Dex Shyam Chaudhari';
+global.botname = process.env.BOT_NAME || 'SHYAM-MD V2';
 
-global.ytname = "HANSTZ-TECH"
-
-global.socialm = "GitHub: Dexsam07"
-
-global.location = "india, kolkata, Murshidabad"
-
-global.ownernumber = process.env.OWNER_NUMBER || '917384287404'  //Owner number
-
-global.ownername = process.env.OWNER_NAME || 'Dex Shyam Chaudhari' //owner name
-global.botname = 'SHYAM-MD' //name of the bot
-
-//sticker details
-global.packname = 'Sticker By'
-global.author = 'SHYAM-MD'
-
-//console view/theme
-global.themeemoji = '⚠️'
-global.wm = "SHYAM BOT"
-
-//theme link
-global.link = 'https://chat.whatsapp.com/IOEbmfzOD6d9TCjdX5Fi3B'
-
-//custom prefix
-global.prefa = ['','!','.','#','/']
-
-
-//bot settings
-global.autolikestatus = true //For auto react Status Random
-global.autoRecording = false //auto recording
-global.autoTyping = false //auto typing
-global.autorecordtype = true //auto typing + recording
-global.autoread = false //auto read messages
-global.autobio = true //auto update bio
-global.anti91 = false //auto block +91 
-global.autoswview = true //auto view status/story
-global.autoreact = false // This is For Auto React 
-global.welcome = false // For Welcome massage groups
-
-
+// --- SOCIALS ---
+global.ytname = "YouTube: DEX-SHYAM"; // Updated from Hanstz to Shyam
+global.socibase = "GitHub: Dexsam07";
+global.location = "India, West Bengal, Murshidabad";
+global.link = 'https://chat.whatsapp.com/IOEbmfzOD6d9TCjdX5Fi3B';
 global.wagc = "https://chat.whatsapp.com/IOEbmfzOD6d9TCjdX5Fi3B";
 
-//reply messages
+// --- STICKER DETAILS ---
+global.packname = 'Sticker By';
+global.author = 'SHYAM-MD V2';
+
+// --- THEME & UI ---
+global.themeemoji = '⚡';
+global.wm = "SHYAM-MD";
+global.prefa = ['.', '!', '#', '/']; // Professional Prefix
+
+// --- AUTOMATION SETTINGS ---
+global.autolikestatus = true;   // Auto React to Status
+global.autoswview = true;       // Auto View Status
+global.autobio = true;          // Auto Update Bio
+global.autoTyping = false;      // Auto Typing
+global.autoRecording = false;   // Auto Recording
+global.autoread = false;        // Auto Read Message
+global.autoreact = false;       // Auto React to Messages
+global.welcome = false;         // Group Welcome
+
+// --- REPLY MESSAGES ---
 global.mess = {
-    done: 'Done !',
-    prem: 'This feature can be used by premium user only',
-    admin: 'This feature can be used by admin only',
-    botAdmin: 'This feature can only be used when the bot is a group admin ',
-    owner: 'This feature can be used by owner only',
-    group: 'This feature is only for groups',
-    private: 'This feature is only for private chats',
-    wait: 'In process... ',    
-    error: 'Error!',
+    done: '✅ Done!',
+    prem: '⭐ This feature is for Premium Users only.',
+    admin: '🛡️ This feature is for Group Admins only.',
+    botAdmin: '🤖 Bot must be Admin to use this command.',
+    owner: '👑 This feature is only for my Owner (Dex Shyam).',
+    group: '👨‍👩‍👧‍👦 This feature is for Groups only.',
+    private: '👤 This feature is for Private Chats only.',
+    wait: '⏳ Processing... Please wait.',    
+    error: '❌ Internal Error! Please try again later.',
 }
 
-global.thumb = fs.readFileSync('./ShyamTzMedia/thumb.jpg')
+// --- MEDIA ---
+// Make sure path correct ho, warna bot crash ho jayega
+if (fs.existsSync('./ShyamTzMedia/thumb.jpg')) {
+    global.thumb = fs.readFileSync('./ShyamTzMedia/thumb.jpg');
+} else {
+    global.thumb = fs.readFileSync('./media/logo.jpg'); // Fallback path
+}
 
+// --- AUTO UPDATE LOGIC ---
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
     fs.unwatchFile(file)
-    console.log(chalk.redBright(`Update'${__filename}'`))
+    console.log(chalk.cyanBright(`[UPDATE] Settings file '${__filename}' has been updated!`))
     delete require.cache[file]
     require(file)
 })
+SCRIPT
