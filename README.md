@@ -1,7 +1,7 @@
-  # 🚀 Hᴀɴs-Xᴍᴅ 🔥
+  # 🚀 SHYAM-MD 🔥
 
 <p align="center">
-  <img src="https://files.catbox.moe/nztndy.jpg" width="70%" alt="Main Graphic" />
+  <img src="[https://files.catbox.moe/nztndy.jpg](https://ibb.co/NgyvdyZS)" width="70%" alt="Main Graphic" />
 </p>
 
 ---
@@ -74,8 +74,8 @@
 
 ---
 
-## 📲 Join the Community  
-[![Join WhatsApp](https://img.shields.io/badge/Join-WhatsApp-25D366?style=for-the-badge&logo=whatsapp)](https://whatsapp.com/channel/0029VasiOoR3bbUw5aV4qB31)
+## 📲 Join the Communit group  
+[![Join WhatsApp](https://img.shields.io/badge/Join-WhatsApp-25D366?style=for-the-badge&logo=whatsapp)](https://chat.whatsapp.com/IOEbmfzOD6d9TCommunity )
 
 ---
 
@@ -85,7 +85,7 @@
 [![Stars](https://img.shields.io/github/stars/Mrhanstz/HANS-XMD_V2?color=yellow&style=for-the-badge&logo=starship)](https://github.com/Mrhanstz/HANS-XMD_V2/stargazers)  
 
 #### **Forked By**  
-[![Forked By](https://img.shields.io/github/forks/Mrhanstz/HANS-XMD_V2?color=green&style=for-the-badge&logo=git)](https://github.com/Mrhanstz/HANS-XMD_V2/network/members)  
+[![Forked By](https://img.shields.io/github/forks/Mrhanstz/HANS-XMD_V2?color=green&style=for-the-badge&logo=git)](https://github.com/Dexsam07/my-session-generator/edit/main/)  
 
 ---
 
