@@ -1,0 +1,5 @@
+build:
+  docker:
+    worker: Dockerfile
+run:
+  worker: pm2-runtime start index.js --name "shyam-md"
